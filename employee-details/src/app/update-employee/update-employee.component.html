@@ -8,9 +8,9 @@
     <div class='card-header'>
         <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
             <strong>Success!</strong> The Employee details have been updated successfully.
-                <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+            <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
     </div>
 
@@ -20,9 +20,9 @@
                 <div class="col-md-3 mb-3">
                     <label>Title</label>
                     <select class="custom-select" formControlName="title">
-                        <option value="1">Mr.</option>
-                        <option value="2">Ms.</option>
-                        <option value="3">Mrs.</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
                     </select>
                 </div>
                 <div class="col-md-3 mb-3">
@@ -40,7 +40,7 @@
                 
             </div>
             <div class="form-row">
-                <div class="col-md-5 mb-3">
+                <div class="col-md-4 mb-3">
                     <label>Primary Address</label>
                     <input type="text" class="form-control" formControlName="primary_addr" placeholder="Primary Address">
                 </div>
@@ -48,17 +48,17 @@
                     <label>Secondary Address</label>
                     <input type="text" class="form-control" formControlName="secondary_addr" placeholder="Secondary Address">
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-md-4 mb-3">
                     <label>Designation</label>
                     <select class="custom-select" formControlName="designation">
-                        <option value="1">Software Trainee</option>
-                        <option value="2">Software Engineer</option>
-                        <option value="3">Senior Software Engineer</option>
-                        <option value="4">Team Lead</option>
-                        <option value="5">Project Lead</option>
-                        <option value="6">Asst Project Manager</option>
-                        <option value="7">Project Manager</option>
-                        <option value="8">Snr Project Manager</option>
+                        <option value="Software Trainee">Software Trainee</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="Senior Software Engineer">Senior Software Engineer</option>
+                        <option value="Team Lead">Team Lead</option>
+                        <option value="Project Lead">Project Lead</option>
+                        <option value="Asst Project Manager">Asst Project Manager</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="Snr Project Manager">Snr Project Manager</option>
                     </select>
                 </div>
             </div>

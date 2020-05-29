@@ -9,7 +9,7 @@ import { EmployeeDetailsService } from '../employee-details.service';
 export class ListEmployeeComponent implements OnInit {
 
   constructor(private employeeDetails:EmployeeDetailsService) { }
-  collection={};
+  collection:any=[];
 
   ngOnInit(): void {
     this.employeeDetails.getList().subscribe((result)=>{
